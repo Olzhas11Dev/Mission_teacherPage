@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.student_section {
+  width: 80%;
+  height: 550px;
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  color: grey;
+  background-color: rgb(218, 231, 247);
+  border-radius: 20px;
+}
+
+.topStudentSection {
+  font-size: 13px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topStudentContainer {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.rightStudentSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightStudentSection h3 {
+  font-size: 12px;
+}
