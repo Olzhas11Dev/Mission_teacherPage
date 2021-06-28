@@ -31,6 +31,9 @@ export default function Prg_main() {
             <div>PROJECT LIBRARY</div>
           </div>
         </div>
+        <div className="arrowSection">
+          <img src="icon_left.png" alt=""/>
+        </div>
         <div className="left_bottom-section">
           <div className="left-bottom-card">
               <img src="icon_user.png" alt=""/>
