@@ -1,0 +1,25 @@
+.prg-header {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+}
+
+.header-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prg-header-logo img {
+  width: 90px;
+}
+
+.prg-header-flags {
+  display: flex;
+}
+.prg-header-flags img {
+  width: 15px;
+  margin-left: 5px;
+}
