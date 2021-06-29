@@ -48,6 +48,42 @@
   height: 15px;
 }
 
+/* Events */
+
+#scaleIcon {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+#scaleLeftBar {
+  width: 5%;
+}
+
+#scaleAvatar {
+  margin-left: 2px;
+}
+
+#scaleLeftBottom {
+  display: flex;
+  flex-direction: column;
+  margin-left: -45px;
+}
+
+#scaleLeftBottom img {
+  margin-bottom: 10px;
+}
+
+#scaleArrow {
+  left: -10px;
+  top: 450px;
+  transform: rotate(180deg);
+}
+
+#scaleRightBar {
+  width: 100%;
+}
+
 .arrowSection {
   cursor: pointer;
   width: 50px;

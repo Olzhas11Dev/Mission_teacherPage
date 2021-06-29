@@ -13,6 +13,11 @@
   overflow-y: scroll;
 }
 
+/* Events */
+#scaleStudenInfo {
+  width: 90%;
+}
+
 .studentInfo::-webkit-scrollbar {
   width: 10px;
 }
