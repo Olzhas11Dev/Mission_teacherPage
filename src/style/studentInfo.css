@@ -1,0 +1,10 @@
+.studentInfo {
+  width: 80%;
+  height: 550px;
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  color: grey;
+  background-color: rgb(218, 231, 247);
+  border-radius: 20px;
+}
