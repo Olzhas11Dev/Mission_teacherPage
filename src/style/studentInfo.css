@@ -1,4 +1,6 @@
 .studentInfo {
+  display: flex;
+  flex-direction: column;
   width: 80%;
   height: 550px;
   position: absolute;
@@ -7,4 +9,29 @@
   color: grey;
   background-color: rgb(218, 231, 247);
   border-radius: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.studentInfo::-webkit-scrollbar {
+  width: 10px;
+}
+
+.studentInfo::-webkit-scrollbar-track {
+  width: 10%;
+}
+
+.studentInfo::-webkit-scrollbar-thumb {
+  background: rgb(134, 177, 230);
+  border-radius: 10px;
+}
+
+.studentInfo::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 40px;
+}
+
+.studentInfo::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 40px;
 }

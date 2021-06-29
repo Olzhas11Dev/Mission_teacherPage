@@ -1,14 +1,14 @@
 import React from 'react'
 import '../style/prg_student_section.css'
-const PrgStudentSection = () => {
+const PrgStudentSection = (props) => {
     return (
     <div className="student_section">
         <div className="student_info_card">
             <div className="info_card_left">
                 <div className="student_name">
-                    AIDEN ANDREWS
+                    {props.name}
                 </div>
-                <div className="student_rate"> <span> 4/15</span> Project Completed</div>
+                <div className="student_rate"> <span> {props.completed}/15</span> Project Completed</div>
             </div>
             <div className="info_card_right">
                 <div className="student_circle">1</div>
