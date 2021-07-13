@@ -3,6 +3,7 @@
 import '../style/studentInfo.css'
 import { useState,useEffect } from 'react'
 import PrgStudentSection from './PrgStudentSection'
+import PrgPhotoSection from './PrgPhotoSection'
 import axios from 'axios'
 
 
@@ -18,12 +19,23 @@ const StudentInfo = (props) => {
     console.log(dataDB)
     return (
         <div className="studentInfo" id = {!props.open ? 'scaleStudenInfo' : null}>
-          
-            {dataDB.map(function(e,index){
+          {/* <div>
+              {dataDB.map(function(e,index){
                 return (
                     <PrgStudentSection key={index} name ={e.firstName} familyName = {e.familyName} tasks={e.tasks}/>
                 )
             })}
+            </div> */}
+
+            <div className="PhotoRow">
+                {dataDB.map(function(e){
+                    return (
+                        <PrgPhotoSection name={e.firstName} familyName = {e.familyName}/>
+                    )
+                })}
+               
+            </div>
+           
         </div>
     )
 }

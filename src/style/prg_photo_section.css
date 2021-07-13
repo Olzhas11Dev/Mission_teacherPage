@@ -1,0 +1,49 @@
+/* .photoInfo {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 550px;
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  color: grey;
+  background-color: rgb(218, 231, 247);
+  border-radius: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+} */
+
+.photoOne {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.photoNames {
+  display: flex;
+  font-size: 10px;
+}
+
+.photAva {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+/* .photoAva {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: cadetblue;
+} */

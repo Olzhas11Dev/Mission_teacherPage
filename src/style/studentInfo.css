@@ -40,3 +40,9 @@
   background: transparent;
   margin-bottom: 40px;
 }
+
+.PhotoRow {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
