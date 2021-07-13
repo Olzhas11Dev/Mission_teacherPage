@@ -1,7 +1,7 @@
 import React from "react"
 import "../style/prg_header.css"
 
-export default function Prg_header() {
+export default function PrgHeader() {
   return (
     <div className="prg-header">
       <div className="header-container">

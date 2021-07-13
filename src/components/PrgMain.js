@@ -1,7 +1,7 @@
 import React from "react"
 import "../style/prg_main.css"
 
-export default function Prg_main(props) {
+export default function PrgMain(props) {
   return (
     <div className="prg-main">
       <div className="main-container">

@@ -1,15 +1,15 @@
 import React from 'react'
 import '../style/prg_student_section.css'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 const PrgStudentSection = (props) => {
    let done = 0;
-   let circles = props.tasks.map(function(e){
+   let circles = props.tasks.map(function(e,index){
        if(e.completed){
             done++
        }
         return (
-            <div className="student_circle" style={{background: e.completed ? '#98ECCC': 'white',color :e.completed ? 'black': 'grey'}}>{e.id}</div>
+            <div key={index} className="student_circle" style={{background: e.completed ? '#98ECCC': 'white',color :e.completed ? 'black': 'grey'}}>{e.id}</div>
         )
     })
 
