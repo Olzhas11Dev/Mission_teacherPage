@@ -10,19 +10,19 @@ export default function Prg_main(props) {
             <img src="Ellipse 39@2x.png" alt="" />
           </div>
           <div className="left-lines">
-            <img src="icon_steps.png" alt="" id ={!props.open ? 'scaleIcon' : null}/>
+            <img src="icon_progress.png" alt="" id ={!props.open ? 'scaleIcon' : null}/>
             {props.open ? 
             <div>PROGRESS TRACKER</div>:null
             }
           </div>
           <div className="left-lines">
-            <img src="icon_steps.png" alt="" id ={!props.open ? 'scaleIcon' : null}/>
+            <img src="icon_graduate.png" alt="" id ={!props.open ? 'scaleIcon' : null}/>
             {props.open ? 
             <div>STUDENT PROFILE</div>:null
             }
           </div>
           <div className="left-lines">
-            <img src="icon_steps.png" alt="" id ={!props.open ? 'scaleIcon' : null}/>
+            <img src="icon_help.png" alt="" id ={!props.open ? 'scaleIcon' : null}/>
             {props.open ?
             <div>HELP REQUEST</div>:null
             }
@@ -34,7 +34,7 @@ export default function Prg_main(props) {
             }
           </div>
           <div className="left-lines">
-            <img src="icon_steps.png" alt="" id ={!props.open ? 'scaleIcon' : null}/> 
+            <img src="icon_library.png" alt="" id ={!props.open ? 'scaleIcon' : null}/> 
             {props.open ? 
             <div>PROJECT LIBRARY</div>:null
             }
@@ -66,7 +66,7 @@ export default function Prg_main(props) {
         </div>
         <div className="main-rightBar" id={!props.open ? 'scaleRightBar' :null}>
           <div className="right-container">
-          <div className="btn-right-section"  >
+          <div className="btn-right-section" id={!props.open ? 'scaleBtnRightSection' :null}>
             <button className="btn-take">Take Screenshot</button>
             <button className="btn-center">Help Center</button>
             <button className="btn-more">More Projects</button>

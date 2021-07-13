@@ -84,6 +84,10 @@
   width: 100%;
 }
 
+#scaleBtnRightSection {
+  width: 36%;
+}
+
 .arrowSection {
   cursor: pointer;
   width: 50px;

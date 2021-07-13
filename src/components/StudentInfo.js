@@ -1,18 +1,30 @@
 
 
 import '../style/studentInfo.css'
+import { useState,useEffect } from 'react'
 import PrgStudentSection from './PrgStudentSection'
-import data from '../data'
+// import data from '../data'
+import axios from 'axios'
 
 
 const StudentInfo = (props) => {
-    function getItem (e) {
-        console.log(e.name) 
-        return <PrgStudentSection key={e.id} name ={e.name} familyName = {e.familyName} completed ={e.completed}/>
-    }
+    const[dataDB,setDataDB] = useState([])
+
+    useEffect(()=>{
+        axios.get('http://localhost:5000/').then(response=>{
+            setDataDB(response.data)
+        })
+    },[])
+    
+    console.log(dataDB)
     return (
         <div className="studentInfo" id = {!props.open ? 'scaleStudenInfo' : null}>
-            {data.map(getItem)}
+          
+            {dataDB.map(function(e){
+                return (
+                    <PrgStudentSection key={e.id} name ={e.firstName} familyName = {e.familyName} tasks={e.tasks}/>
+                )
+            })}
         </div>
     )
 }
