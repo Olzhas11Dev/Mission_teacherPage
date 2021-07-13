@@ -16,26 +16,28 @@ const StudentInfo = (props) => {
         })
     },[])
     
-    console.log(dataDB)
-    return (
-        <div className="studentInfo" id = {!props.open ? 'scaleStudenInfo' : null}>
-          {/* <div>
-              {dataDB.map(function(e,index){
+    const block1 = 
+        <div>
+            {dataDB.map(function(e,index){
+            return (
+                <PrgStudentSection key={index} name ={e.firstName} familyName = {e.familyName} tasks={e.tasks}/>
+            )
+            })}
+        </div> 
+
+    const block2 = 
+        <div className="PhotoRow">
+            {dataDB.map(function(e,index){
                 return (
-                    <PrgStudentSection key={index} name ={e.firstName} familyName = {e.familyName} tasks={e.tasks}/>
+                    <PrgPhotoSection key = {index} name={e.firstName} familyName = {e.familyName}/>
                 )
             })}
-            </div> */}
+        </div>
+    console.log(props.section)
+    return (
 
-            <div className="PhotoRow">
-                {dataDB.map(function(e){
-                    return (
-                        <PrgPhotoSection name={e.firstName} familyName = {e.familyName}/>
-                    )
-                })}
-               
-            </div>
-           
+        <div className="studentInfo" id = {!props.open ? 'scaleStudenInfo' : null}>
+               {props.section === 1 ? block1 : block2}
         </div>
     )
 }

@@ -9,16 +9,16 @@ export default function PrgMain(props) {
           <div className="main-avatar" id ={!props.open ? 'scaleAvatar' : null}>
             <img src="Ellipse 39@2x.png" alt="" />
           </div>
-          <div className="left-lines">
-            <img src="icon_progress.png" alt="" id ={!props.open ? 'scaleIcon' : null}/>
-            {props.open ? 
-            <div>PROGRESS TRACKER</div>:null
-            }
+          <div onClick={()=>props.getSection(1)} className="left-lines">
+              <img src="icon_progress.png" alt="" id ={!props.open ? 'scaleIcon' : null}/>
+              {props.open ? 
+              <div>PROGRESS TRACKER</div>:null
+              }
           </div>
-          <div className="left-lines">
+          <div onClick={()=>props.getSection(2)} className="left-lines">
             <img src="icon_graduate.png" alt="" id ={!props.open ? 'scaleIcon' : null}/>
             {props.open ? 
-            <div>STUDENT PROFILE</div>:null
+            <div >STUDENT PROFILE</div>:null
             }
           </div>
           <div className="left-lines">

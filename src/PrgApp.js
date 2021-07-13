@@ -6,11 +6,12 @@ import { useState } from 'react'
 
 function App() {
   const [open,setOpen] = useState('false')
+  const [section,getSection] = useState(1)
   return (
     <div className="App">
       <PrgHeader/>
-      <PrgMain open={open} setOpen={setOpen}/>
-      <StudentInfo open={open} setOpen={setOpen}/>
+      <PrgMain open={open} setOpen={setOpen} getSection={getSection}/>
+      <StudentInfo open={open} setOpen={setOpen} section={section}/>
     </div>
   )
 }
